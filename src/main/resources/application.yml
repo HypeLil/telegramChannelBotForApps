@@ -1,0 +1,26 @@
+bot:
+  token: 1452112048:AAE4lwlyOHyHttqYhCuUhMwoIDuANkMC0Co
+  name: workHypelil_bot
+  admin: 127576775
+  chatId: 1001534410877
+server:
+  port: 8072
+spring:
+  liquibase:
+    enabled: true
+    contexts: test
+  jpa:
+    properties:
+      hibernate.show_sql: false
+      hibernate:format_sql: false
+    open-in-view: false
+    hibernate.ddl-auto: none
+  datasource:
+    #  Note that the hostname, port and database name on url property and username and password properties will be ignored
+    #  and it will be used default container values
+    url: jdbc:postgresql://localhost:5555/botter1234?user=postgres&password=91823God&currentSchema=public
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: 91823God
+    hikari:
+      schema: public
